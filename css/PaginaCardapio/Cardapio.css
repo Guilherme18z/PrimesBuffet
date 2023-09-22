@@ -1,30 +1,3 @@
-    /* Smartphones (600px para baixo) */
-@media only screen and (max-width: 600px) {
-    
-}
-
-/* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) */
-@media only screen and (min-width: 600px) {
-    
-}
-
-/*Dispostivos Médios (Tablets deitados, 768px para cima) */
-@media only screen and (min-width: 768px) {
-    
-}
-
-/* Dispostivos Largos (laptops/desktops, 992px para cima) */
-@media only screen and (min-width: 992px) {
-    
-}
-
-/* Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima) */
-@media only screen and (min-width: 1200px) {
-    
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@600&display=swap');
-
 body {
     margin: 0;
     display: flex;
@@ -40,7 +13,7 @@ body {
     "main"
     "footer"
     ;
-    grid-template-rows: 120px 100vh 80px;
+    grid-template-rows: 120px 650vh 90px;
 }
 
 #header {
@@ -82,6 +55,7 @@ body {
 
 #main {
     grid-area: main;
+    text-align: center;
 }
 
 #main h1{
@@ -98,6 +72,14 @@ body {
     margin-right: 150px;
     font-size: larger;
     font-family: 'Oswald', sans-serif;
+}
+
+#main .Form1 {
+    margin-top: 80px;
+}
+
+#main .banner {
+    margin-top: 65px;
 }
 
 .banner img {
@@ -133,6 +115,6 @@ body {
     width: 60px;
     border-radius: 10px;
     background-color: #28A71B;
-    background-image: url(img/icon_whats.png);
+    background-image: url(../../img/icon_whats.png);
     background-size: cover;
 }
