@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuggles&display=swap');
+
+body {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
+    grid-template-rows: 120px 120vh 80px;
+}
+
+#header {
+    grid-area: header;
+    border: 1px dashed rgb(0, 0, 0) ;
+    border-bottom: 2px solid #af9617de;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/*#header img {
+    max-width: 50%;
+    width: 150px; 
+}*/
+
+#header ul {
+    list-style: none;
+}
+
+#header ul li {
+    display: inline;
+}
+
+#header ul li a {
+    text-decoration: none;
+    margin-right: 20px;
+    color: #af9617de;
+    display: inline-block;
+    padding: 9px;
+} 
+
+#header ul li a:hover {
+    color: black;
+    background-color: #af9617de;
+    border-radius: 15px;
+}
+
+#main {
+    grid-area: main;
+    background-color: rgb(139, 136, 136);
+    text-align: center;
+    background-image: url(../../img/banner_image2.jpeg);
+    background-size: cover;
+}
+
+#main h1{
+    background-color: rgb(0, 0, 0);
+    color: #af9617de ;
+    font-size: x-large;
+    text-align: center;
+    margin-top: 0;
+    padding: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    font-family: 'Fuggles', cursive;
+}
+
+#main h3 {
+    /*color: #ffe14b;*/
+    color: #af9617de;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    margin-left: 350px;
+    margin-right: 350px;
+
+}
+
+#main h4 {
+    /*color: #ffe14b;*/
+    color: #af9617de;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    margin-left: 350px;
+    margin-right: 350px;
+}
+
+#main p {
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Fuggles', cursive;
+
+}
+
+/*#main .banner img {
+    width: 100%;
+    height: 100px;
+}*/
+
+/*.banner img {
+    width: 300px;
+    position: sticky;
+    left: 38%; 
+}*/
+
+#footer {
+    grid-area: footer;
+    border: 1px dashed black ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: #af9617de;
+}
+
+.logo_t {
+    color: #af9617de;
+    position: absolute;
+    top: 42px;
+    left: 50px;
+    font-size: xx-large;
+}
+
+.logo_t a{
+    color: #af9617de;
+    font-size: xx-large;
+    text-decoration: none;
+}
+
+.banner {
+    width: auto;
+    height: 140px;
+    background-color: gray;
+    background-image: url(../../img/Banner_image.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.imagens img {
+    width: 150px;
+    position: relative;
+    left: 28%;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+#main input {
+    border: 2px solid #af9617de;
+    margin-left: 25px;
+}
+
+
+.WhatsApp_icon {
+    position: fixed;
+    bottom: 12px;
+    right: 12px;
+    height: 60px;
+    width: 60px;
+    border-radius: 10px;
+    background-color: #28A71B;
+    background-image: url(../../img/icon_whats.png);
+    background-size: cover;
+}
