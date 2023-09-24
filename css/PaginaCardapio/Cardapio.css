@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuggles&display=swap');
+
 body {
     margin: 0;
     display: flex;
@@ -56,6 +58,7 @@ body {
 #main {
     grid-area: main;
     text-align: center;
+    background-color: rgb(176, 173, 173);
 }
 
 #main h1{
@@ -63,7 +66,7 @@ body {
     text-align: center;
     margin-top: 0;
     padding: 8px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     font-family: 'Bebas Neue', sans-serif;
 }
 
@@ -80,6 +83,10 @@ body {
 
 #main .banner {
     margin-top: 65px;
+}
+
+#main img {
+    border: 2px double #af9617de;
 }
 
 .banner img {
@@ -105,6 +112,12 @@ body {
     top: 42px;
     left: 50px;
     font-size: xx-large;
+}
+
+.logo_t a{
+    color: #af9617de;
+    font-size: xx-large;
+    text-decoration: none;
 }
 
 .WhatsApp_icon {

@@ -24,6 +24,8 @@
     }
     
     @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Fuggles&display=swap');
+
     
     body {
         margin: 0;
@@ -40,7 +42,7 @@
         "main"
         "footer"
         ;
-        grid-template-rows: 120px 100vh 80px;
+        grid-template-rows: 120px 120vh 80px;
     }
     
     #header {
@@ -82,35 +84,40 @@
     
     #main {
         grid-area: main;
+        background-color: rgb(139, 136, 136);
     }
     
     #main h1{
-        background-color: gray;
+        background-color: rgb(0, 0, 0);
+        color: #af9617de ;
+        font-size: x-large;
         text-align: center;
         margin-top: 0;
         padding: 8px;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
-        font-family: 'Bebas Neue', sans-serif;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        font-family: 'Fuggles', cursive;
     }
     
     #main p {
+        margin-top: 50px;
         margin-left: 150px;
         margin-right: 150px;
-        font-size: larger;
-        font-family: 'Oswald', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Fuggles', cursive;
+
     }
 
-    #main .banner img {
+    /*#main .banner img {
         width: 100%;
         height: 100px;
-    }
+    }*/
     
-    .banner img {
+    /*.banner img {
         width: 300px;
         position: sticky;
-        left: 38%;
-        
-    }
+        left: 38%; 
+    }*/
     
     #footer {
         grid-area: footer;
@@ -121,7 +128,7 @@
         background-color: black;
         color: #af9617de;
     }
-    
+
     .logo_t {
         color: #af9617de;
         position: absolute;
@@ -129,7 +136,31 @@
         left: 50px;
         font-size: xx-large;
     }
+
+    .logo_t a{
+        color: #af9617de;
+        font-size: xx-large;
+        text-decoration: none;
+    }    
     
+    .banner {
+        width: auto;
+        height: 140px;
+        background-color: gray;
+        background-image: url(../../img/Banner_image.jpeg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .imagens img {
+        width: 150px;
+        position: relative;
+        left: 28%;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+   
+
     .WhatsApp_icon {
         position: fixed;
         bottom: 12px;

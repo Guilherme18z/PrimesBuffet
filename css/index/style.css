@@ -24,6 +24,7 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fuggles&display=swap');
 
 body {
     margin: 0;
@@ -40,7 +41,7 @@ body {
     "main"
     "footer"
     ;
-    grid-template-rows: 120px 650vh 80px;
+    grid-template-rows: 120px 90vh 80px;
 }
 
 #header {
@@ -89,7 +90,7 @@ body {
     text-align: center;
     margin-top: 0;
     padding: 8px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     font-family: 'Bebas Neue', sans-serif;
 }
 
@@ -123,6 +124,12 @@ body {
     top: 42px;
     left: 50px;
     font-size: xx-large;
+}
+
+.logo_t a{
+    color: #af9617de;
+    font-size: xx-large;
+    text-decoration: none;
 }
 
 .WhatsApp_icon {

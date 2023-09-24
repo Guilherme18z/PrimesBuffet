@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime's Buffet</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <div class="container">
+        <header id="header">
+            <!--<img src="img/icon_funds.png" alt="logo">-->
+            <div class="logo_t"><a href="../home/paginaHome.html">Prime's Buffet</a></div>
+                <ul>
+                    <li><a href="../home/paginaHome.html">Início</a></li>
+                    <li><a href="../Forms/forms.html">Formulário</a></li>
+                    <li><a href="../index/index.html">Sobre nós</a></li>
+                    <li><a href="../PaginaCardapio/paginaCardapio.html">Cardápio</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="main">
+        
+            <form  method="post">
+                <legend>
+                    <h3>Receba um atendimento personalizado</h3>
+                </legend><p>
+            
+                <input type="text" name="nome[]" required placeholder="Nome"  maxlength="50"><p>
+                <input type="number" name="numero[]" required placeholder="Telefone"><p>
+                <input type="email" name="email[]" required placeholder="E-mail"><p>
+                    <h3>Selecione a Data do seu Evento!</h3>
+                <input type="date" name="data_evento[]"  placeholder="Data do Evento" required><p>
+                
+                    <h4>Selecione um dos nossos eventos</h4>
+                    <select nome="">
+                      <option value="Almoço">Almoço</option>
+                      <option value="Infantil">Infantil</option>
+                      <option value="Aniversário">Aniversário</option>
+                    </select>
+                
+                    <input type="submit"></button>
+                
+                <div class="logo_footer">
+                    <img src="../../img/icon_funds.png" alt="logo" width="300px">
+                </div>
+        </main>
+        <footer id="footer">&copy; Todos os direitos reservados - 2023</footer>
+    </div>
+
+
+    <a href="#">
+        <div class="WhatsApp_icon"></div>
+    </a>
+</body>
+</html>
