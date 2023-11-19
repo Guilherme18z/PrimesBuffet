@@ -15,7 +15,7 @@ body {
     "main"
     "footer"
     ;
-    grid-template-rows: 120px 120vh 80px;
+    grid-template-rows: 120px 80vh 80px;
 }
 
 #header {
@@ -71,13 +71,13 @@ body {
     margin-top: 0;
     padding: 8px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    font-family: 'Fuggles', cursive;
+    /*font-family: 'Fuggles', cursive;*/
 }
 
 #main h3 {
     /*color: #ffe14b;*/
     color: #af9617de;
-    font-family: Arial, Helvetica, sans-serif;
+    /*font-family: Arial, Helvetica, sans-serif;*/
     background-color: black;
     margin-left: 350px;
     margin-right: 350px;
@@ -87,7 +87,7 @@ body {
 #main h4 {
     /*color: #ffe14b;*/
     color: #af9617de;
-    font-family: Arial, Helvetica, sans-serif;
+    /*font-family: Arial, Helvetica, sans-serif;*/
     background-color: black;
     margin-left: 350px;
     margin-right: 350px;
@@ -99,7 +99,19 @@ body {
     margin-right: 150px;
     font-size: 20px;
     font-weight: bold;
-    font-family: 'Fuggles', cursive;
+    /*font-family: 'Fuggles', cursive;*/
+}
+
+#main form legend h3 {
+    border-radius: 6px;
+    padding: 10px;
+}
+
+#main form span {
+    color: #af9617de;
+    background-color: black;
+    border-radius: 3px;
+    padding: 2px;
 
 }
 
@@ -158,6 +170,8 @@ body {
 #main input {
     border: 2px solid #af9617de;
     margin-left: 25px;
+    height: 30px;
+    width: 400px;
 }
 
 

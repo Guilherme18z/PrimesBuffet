@@ -20,30 +20,76 @@
             </nav>
         </header>
         <main id="main">
-        
-            <form  method="post">
-                <legend>
+        <br><br><br><br><br>
+            <form name="form1" method="post" action="grava.jsp">
+                 <legend>
                     <h3>Receba um atendimento personalizado</h3>
                 </legend><p>
-            
-                <input type="text" name="nome[]" required placeholder="Nome"  maxlength="50"><p>
-                <input type="number" name="numero[]" required placeholder="Telefone"><p>
-                <input type="email" name="email[]" required placeholder="E-mail"><p>
-                    <h3>Selecione a Data do seu Evento!</h3>
-                <input type="date" name="data_evento[]"  placeholder="Data do Evento" required><p>
                 
-                    <h4>Selecione um dos nossos eventos</h4>
+                
+                <input type="text" name="txtNome" id="txtNome" 
+                placeholder="Nome">
+                <span id="erroNome"></span> <p>
+
+                
+                <input type="text" name="txtNumero" id="txtTelefone" placeholder="Telefone">
+                <span id="erroTelefone"></span> <p>
+
+                
+                <input type="text" name="txtEmail" id="txtEmail" placeholder="E-mail">
+                <span id="erroEmail"></span> <p>
+
+                <input type="button" value="Gravar" onclick="verificar()">
+
+
+                    <!--<h3>Selecione a Data do seu Evento!</h3>
+                <input type="date" name="data_evento[]"  placeholder="Data do Evento" required><p>-->
+                    
+                    <!-- <h4>Selecione um dos nossos eventos</h4>
                     <select nome="">
                       <option value="Almoço">Almoço</option>
                       <option value="Infantil">Infantil</option>
                       <option value="Aniversário">Aniversário</option>
-                    </select>
+                    </select> -->
                 
-                    <input type="submit"></button>
+                    
                 
-                <div class="logo_footer">
+               <!-- <div class="logo_footer">
                     <img src="../../img/icon_funds.png" alt="logo" width="300px">
-                </div>
+                </div>-->
+            </form>
+            
+            <script>
+                function verificar() {
+                //var n = document.form1.txtNome.value;    
+                    var n = document.getElementById("txtNome").value; 
+                    var t = document.getElementById("txtTelefone").value;
+                    var e = document.getElementById("txtEmail").value;
+                    var enviar = true ;
+        
+                if(n.length == 0){
+                    document.getElementById("erroNome").textContent = "Preencha o campo nome!"
+                    document.getElementById("txtNome").style.backgroundColor = "yellow";
+                    enviar = false;
+                }
+        
+                if(isNaN(t) || t.length == 0 ){
+                    document.getElementById("erroTelefone").textContent = "Preencha o Telefone!"
+                    document.getElementById("txtTelefone").style.backgroundColor = "yellow";
+                    enviar = false;
+                }
+        
+                if (e.indexOf("@") < 0 ) {
+                    document.getElementById("erroEmail").textContent = "Preencha o Email!";
+                    document.getElementById("txtEmail").style.backgroundColor = "yellow";
+                    enviar = false;
+                }
+        
+                if (enviar) {
+                    document.form1.submit();
+                }
+            }
+            </script>
         </main>
         <footer id="footer">&copy; Todos os direitos reservados - 2023</footer>
     </div>
