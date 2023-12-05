@@ -15,7 +15,7 @@ body {
     "main"
     "footer"
     ;
-    grid-template-rows: 120px 650vh 90px;
+    grid-template-rows: 120px 380vh 90px;
 }
 
 #header {
@@ -77,9 +77,10 @@ body {
     font-family: 'Oswald', sans-serif;
 }
 
-#main .Form1 {
+/*#main .Form1 {
     margin-top: 80px;
 }
+*/
 
 #main .banner {
     margin-top: 65px;
@@ -87,6 +88,7 @@ body {
 
 #main img {
     border: 2px double #af9617de;
+    margin-top: 25px;
 }
 
 .banner img {
